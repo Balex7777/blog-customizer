@@ -13,7 +13,10 @@ export const ArrowButtonStory: Story = {
 	render: () => {
 		return (
 			<>
-				<ArrowButton />
+				<ArrowButton
+					open={false}
+					setOpen={() => alert('открыть/закрыть боковую панель')}
+				/>
 			</>
 		);
 	},
