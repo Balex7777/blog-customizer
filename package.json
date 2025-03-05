@@ -67,9 +67,7 @@
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
-    // "test": "yarn stylelint:fix && yarn lint && yarn format",
-    // "prepare": "husky install",
-    // "commit": "yarn test && cz",
+    "test": "yarn stylelint:fix && yarn lint && yarn format",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

@@ -1,10 +1,10 @@
 import { useState, useRef } from 'react';
 import type { MouseEventHandler } from 'react';
 import clsx from 'clsx';
-import { OptionType } from 'src/constants/articleProps';
-import { Text } from 'components/text';
-import { Spacing } from 'components/spacing';
-import arrowDown from 'src/images/arrow-down.svg';
+import { OptionType } from '../../../src/constants/articleProps';
+import { Text } from '../../components/text';
+import { Spacing } from '../../components/spacing';
+import arrowDown from '../../../src/images/arrow-down.svg';
 import { Option } from './Option';
 import { isFontFamilyClass } from './helpers/isFontFamilyClass';
 import { useEnterSubmit } from './hooks/useEnterSubmit';
@@ -75,6 +75,7 @@ export const Select = (props: SelectProps) => {
 					data-status={status}
 					data-selected={!!selected?.value}
 					onClick={handlePlaceHolderClick}
+					aria-hidden='true'
 					role='button'
 					tabIndex={0}
 					ref={placeholderRef}>
