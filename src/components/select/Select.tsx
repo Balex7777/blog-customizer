@@ -75,7 +75,9 @@ export const Select = (props: SelectProps) => {
 					data-status={status}
 					data-selected={!!selected?.value}
 					onClick={handlePlaceHolderClick}
-					aria-hidden='true'
+					onKeyDown={() => {
+						console.log('pashalco');
+					}}
 					role='button'
 					tabIndex={0}
 					ref={placeholderRef}>

@@ -17,6 +17,7 @@ import {
 import { RadioGroup } from '../radio-group';
 import { Separator } from '../separator';
 import { Spacing } from '../spacing';
+import { Text } from '../../components/text';
 
 interface ArticleParamsFormProps {
 	setArticleState: (
@@ -71,6 +72,11 @@ export const ArticleParamsForm = ({
 			<ArrowButton open={open} setOpen={setOpen} />
 			<aside className={clsx(styles.container, open && styles.container_open)}>
 				<form className={styles.form} onSubmit={onSubmit} onReset={onReset}>
+					<Text size={31} weight={800} uppercase>
+						Задайте параметры
+					</Text>
+					<Spacing size={50} />
+
 					<Select
 						title='Шрифт'
 						selected={fontFamily}
